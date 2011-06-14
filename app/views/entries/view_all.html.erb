@@ -1,0 +1,10 @@
+    <h1>Listing all entries</h1>
+    <%= link_to 'See your entries', :controller => :entries %>
+       <% @entries.each do |entry| %>
+<h2><%= entry.title %></h2>
+<p><%= entry.content %></p>
+<p><em>Posted at <%= entry.created_at%> by <%= entry.user.email %></em></p>
+<% end %>
+
+<%= link_to 'Add new entry', new_entry_path %>
+<br />Total number of requests are: <%= session[:requests] %>

@@ -1,0 +1,5 @@
+<% div_for entry do %>
+    <h2><%= link_to_unless_current h(entry.title), entry %></h2>
+    <%= simple_format h(entry.content)%>
+<% end %>
+

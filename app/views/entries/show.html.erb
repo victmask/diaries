@@ -1,0 +1,10 @@
+<%= render :partial => @entry %>
+<p id="notice"><%= notice %></p>
+
+
+
+<p>
+  <%= link_to 'Edit', edit_entry_path(@entry) %> |
+  <%= link_to 'Destroy', @entry, :method => :delete, :confirm => "Are you sure?" %> |
+<%= link_to 'See all your entries', entries_path %>
+</p>

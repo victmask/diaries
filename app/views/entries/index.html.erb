@@ -1,0 +1,4 @@
+<h1>Listing your entries</h1><%= link_to 'See all entries', :controller => :entries, :action => :view_all %>
+<%= render :partial => @entries %>
+
+<%= link_to 'New Entry', new_entry_path %>
